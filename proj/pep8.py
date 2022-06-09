@@ -20,7 +20,7 @@ class MyClass:  # class declaration should be in CamelCase
     :type instance_var2: str
     """
 
-    def __init__(self, init1, init2):
+    def __init__(self, init1:int, init2:str):
         """
         This method initializes the instance variables of myClass
 
@@ -32,7 +32,8 @@ class MyClass:  # class declaration should be in CamelCase
         self._instance_var1 = init1  # instance variables precede with _
         self._instance_var2 = init2
 
-    def my_method(arg):  # methods/functions should be in snake_case
+    def my_method(arg:int) -> (int):  # methods/functions should be in snake_case
+        #define methods/functions in Python3 with def name(param:type) --> (returnType):
         '''
         This method computes a sum with arg and init1
 
